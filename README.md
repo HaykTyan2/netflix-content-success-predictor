@@ -18,8 +18,8 @@
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/HaykTyan2/Netflix442.git
-   cd Netflix442
+   git clone https://github.com/HaykTyan2/netflix-content-success-predictor.git
+   cd netflix-content-success-predictor
 2. Install dependencies
    ```bash
    pip install -r requirements.txt
