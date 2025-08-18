@@ -1,7 +1,7 @@
 ## 📂 Netflix442
 
 - **/colab_notebook/**
-  - **/DATASETS_COMP_442/**
+  - **/Netflix442/**
     - `netflix_titles.csv` – Netflix dataset  
     - `imdb_top_1000.csv` – IMDb dataset  
     - `netflix_merged.csv` – merged dataset of both  
@@ -18,8 +18,8 @@
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/HaykTyan2/Comp442-Final-Project.git
-   cd Comp442-Final-Project
+   git clone https://github.com/HaykTyan2/Netflix442.git
+   cd Netflix442
 2. Install dependencies
    ```bash
    pip install -r requirements.txt
