@@ -1,0 +1,57 @@
+body, html {
+  background-color: rgb(255, 199, 199);
+  margin:0;
+  padding:0;
+}
+* {
+  font-family:Arial;
+  box-sizing: border-box;
+}
+.main-container {
+  padding:20px 80px;
+}
+.header {
+  font-size:100px;
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+.line {
+  background-color:rgb(50, 46, 46);
+  height:1px;
+}
+.form {
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  margin-top:10px;
+  gap:10px;
+  padding:20px;
+}
+.input-container {
+  display:flex;
+  flex-direction: column;;
+  font-size:2.5rem;
+  gap:25px;
+}
+.form-group {
+  display:flex;
+}
+.label,
+.input,
+.select,
+.submit-btn {
+  font-size:inherit;
+  padding:8px;
+}
+.label {
+  font-weight:bold;
+}
+.input {
+  width:20rem;
+}
+.submit-btn {
+  display: inline-block;
+  align-self: center; /* or center, depending on what you want */
+}

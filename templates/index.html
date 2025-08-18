@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Netflix Hit Predictor</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <h1 class="header">Netflix Hit Predictor</h1>
+      <div class="line" role="presentation"></div>
+
+      <form class="form" action="/predict" method="POST">
+        <div class="input-container">
+          <div class="form-group">
+            <label for="type" class="label">Type:</label>
+            <select id="type" name="type" class="select" required>
+              <option value="" disabled selected>Select...</option>
+              <option value="movie">Movie</option>
+              <option value="tv show">TV Show</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="genres" class="label">Genres:</label>
+            <select id="genres" name="genres" class="select" multiple size="6" required>
+              {% for g in genres_list %}
+                <option value="{{ g }}">{{ g }}</option>
+              {% endfor %}
+            </select>
+            <small>Tip: hold Ctrl/Cmd to pick multiple.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="release_year" class="label">Year:</label>
+            <input id="release_year" name="release_year" type="number" class="input"
+                   placeholder="Release Year" min="1900" max="2100" required>
+          </div>
+
+          <button class="submit-btn" type="submit">Submit</button>
+
+          <div class="result">
+            {% if result %}
+              <p><strong>Prediction:</strong> {{ result }}</p>
+              {% if prob %}<p><strong>Probability:</strong> {{ prob }}</p>{% endif %}
+            {% endif %}
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
