@@ -1,4 +1,4 @@
-## 📂 Netflix442
+## Netflix442
 
 - **/colab_notebook/**
   - **/Netflix442/**
@@ -30,7 +30,7 @@
    ```bash
    http://127.0.0.1:5000/
    
-📘 Notes
+Notes:
 
 The Colab notebooks (.ipynb) are included for dataset merging and model training.
 
